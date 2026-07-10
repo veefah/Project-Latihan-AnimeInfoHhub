@@ -130,14 +130,13 @@ a:hover {
   display:flex ;
   gap: 20px;
   flex-wrap: wrap;
+  flex: 4;
 }
 
 .card-characters {
   display: flex;
   border: 1px solid cyan;
   border-radius: 10px;
-
-  width: 100%;
   box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
 }
 
@@ -150,7 +149,7 @@ a:hover {
 }
 
 .characters-info {
-  margin-left: 20px;
+  margin: 20px;
 }
 
 figure {
@@ -165,20 +164,36 @@ figure {
   box-shadow: 0 8px 20px rgba(0, 255, 255, 0.4);
 }
 
-.gallery-container {
+.layout-container {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.sidebar {
+  border: 3px solid limegreen;
+  border-radius: 10px;
+  flex: 1;
+  padding: 10px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    box-sizing: border-box;
 }
 
 .gallery-container img {
-  width : 200px;
-  border-radius: 15px;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .gallery-container img:hover {
   transform: scale(1.05);
-  box-shadow: 0 5px 5px cyan;
+  box-shadow: 0 0px 20px cyan;
 }
 
 .gallery-group {
