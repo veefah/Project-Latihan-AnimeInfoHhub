@@ -19,7 +19,7 @@
 				<li><a href="#popular">Popular Anime</a></li>
 				<li><a href="#characters">Characters</a></li>
 				<li><a href="#gallery">Gallery</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#reflection">Reflection</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -169,7 +169,7 @@
 	</div>
 
 	<div class="item">
-	<h3>Jiraiya sensei</h3>
+	<h3>Jiraiya</h3>
 	<p>Jiraiya tidak hidup untuk melihat dunia yang ia impikan. Namun, ia percaya bahwa generasi setelahnya akan mewujudkannya. Kadang, perjuangan terbesar bukanlah menikmati hasilnya, melainkan menyiapkan jalan bagi orang lain.</p>
 	<strong>Anime : Naruto</strong>
 	</div>
@@ -278,67 +278,55 @@
 	</article>
 </section>
 
-<section id="contact">
+<section id="reflection">
+
+    <h2>✦ Share Your Life Lesson ✦</h2>
+
+    <p>
+    Setiap cerita meninggalkan sesuatu.
+Bagikan pelajaran atau kutipan yang paling
+bermakna bagimu.
+    </p>
+
 	<form action="" method="GET">
 
-	<fieldset id="kotak">
-		<legend><strong>Feedback / Kritik & Saran</strong></legend>
-		
-	<div>
-		<label for="nama">Nama :<br>
-		<input type="text" id="nama" name="nama">			
+		<label for="nama">Nama (opsional)<br>
+		<input type="text" id="nama" name="nama" placeholder="nama/nickname">			
 		</label>
+		<br><br>
+
+		<label for="anime">Anime Favorit</label><br>
+		<select id="anime" name="anime">
+			<option value="" disabled selected>Pilih anime favoritmu</option>
+			<option value="naruto">Naruto</option>
+			<option value="kimetsu">Kimetsu no Yaiba</option>
+			<option value="jujutsu">Jujutsu Kaisen</option>
+			<option value="kuroshitsuji">Kuroshitsuji</option>
+			<option value="spyxfamily">Spy x Family</option>
+		</select>
+		<br><br>
+
+		<label for="lesson">Your Life Lesson / Pelajaran hidup</label>
 		<br>
-		<label for="email">Email :<br>
-		<input type="email" id="email" name="email">
-		</label><br>
-	</div>
+		<textarea id="lesson" name="lesson" placeholder="Tuliskan pelajaran hidup / kesan yang kamu dapatkan dari anime"></textarea>
+		<br><br>
 
-		<label for="text">Feedback</label>
+		<label for="quote">Your Favorite Quote</label>
 		<br>
-		<textarea id="text" name="feedback"></textarea>
+		<textarea id="quote" name="quote" placeholder="Tuliskan quote / kata mutiara favoritmu"></textarea>
+		<br><br>
 
-		<div>
-		<p> Anime Terfavorit</p>
-		<input type="radio" id="naruto" name="anime" value="naruto">
-		<label for="naruto">Naruto</label>
+		<button type="submit">Share Reflection</button>
 
-		<input type="radio" id="kimetsu" name="anime" value="kimetsu">
-		<label for="kimetsu">Kimetsu no Yaiba</label>
-
-		<input type="radio" id="jujutsu" name="anime" value="jujutsu">
-		<label for="jujutsu">Jujutsu Kaisen</label>
-
-		<input type="radio" id="kuroshitsuji" name="anime" value="kuroshitsuji">
-		<label for="kuroshitsuji">Kuroshitsuji</label>
-
-		<input type="radio" id="spy" name="anime" value="spyxfamily">
-		<label for="spy">Spy x Family</label>
-	</div>
-		<br>
-
-	<div>
-		<p>Genre Favorit</p>
-
-		<input type="checkbox" id="action" name="genre" value="action">
-		<label for="action">Action</label>
-
-		<input type="checkbox" id="fantasi" name="genre" value="fantasi">
-		<label for="fantasi">Fantasi</label>
-
-		<input type="checkbox" id="romance" name="genre" value="romance">
-		<label for="romance">Romance</label>	
-
-	</div>
-	<br>
-	<button type="submit">Kirim</button>
-
-   </fieldset>
 	</form>
 </section>
 
 </main>
-<footer><p>&copy; Anime Info hub 2026</p></footer>
+<footer>
+    <p>✦ Anime Info Hub ✦</p>
+    <p>Anime bukan hanya hiburan, tapi juga sumber inspirasi hidup.</p>
+    <small>&copy; 2026 Anime Info Hub. All Rights Reserverd</small>
+</footer>
 
 </body>
 </html>
